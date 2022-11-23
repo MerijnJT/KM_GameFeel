@@ -20,7 +20,7 @@ namespace Platformer.Gameplay
 
         public override void Execute()
         {
-            var willHurtEnemy = player.Bounds.center.y >= enemy.Bounds.max.y;
+            var willHurtEnemy = true;
 
             if (willHurtEnemy)
             {
@@ -43,6 +43,7 @@ namespace Platformer.Gameplay
                     Schedule<EnemyDeath>().enemy = enemy;
                     player.Bounce(2);
                     CameraShake.instance.ShakeCamera(6f, .3f);
+                    ParticleManager.instance.Explodiodi(enemy.transform.position);
                 }
             }
             else

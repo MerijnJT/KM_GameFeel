@@ -141,8 +141,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0017027855, y: -0.11209929}
-  m_Size: {x: 0.31037235, y: 0.44580126}
+  m_Offset: {x: 0.0068130493, y: -0.20792162}
+  m_Size: {x: 0.39725113, y: 0.39725113}
   m_Direction: 0
 --- !u!114 &2651140156555518892
 MonoBehaviour:
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: {fileID: 0}
-  ouch: {fileID: 8300000, guid: b7f741588644cd64bbee6387cb54a96d, type: 3}
+  ouch: {fileID: 8300000, guid: b3c64121b7a0b8c458d9bcf543b55942, type: 3}
 --- !u!82 &5843668731025413174
 AudioSource:
   m_ObjectHideFlags: 0

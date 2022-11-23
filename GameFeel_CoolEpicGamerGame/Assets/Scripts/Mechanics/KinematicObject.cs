@@ -136,7 +136,7 @@ namespace Platformer.Mechanics
                 for (var i = 0; i < count; i++)
                 {
                     var currentNormal = hitBuffer[i].normal;
-
+                    //Debug.Log("Surface hit!");
                     //is this surface flat enough to land on?
                     if (currentNormal.y > minGroundNormalY)
                     {
@@ -160,9 +160,12 @@ namespace Platformer.Mechanics
                     }
                     else
                     {
-                        //We are airborne, but hit something, so cancel vertical up and horizontal velocity.
-                        velocity.x *= 0;
-                        velocity.y = Mathf.Min(velocity.y, 0);
+                        if (currentNormal.y < -minGroundNormalY) //Bonked?
+                        {
+                            //We are airborne, but bonked, so cancel vertical up and horizontal velocity.
+                            velocity.x *= 0;
+                            velocity.y = Mathf.Min(velocity.y, 0);
+                        }
                     }
                     //remove shellDistance from actual move distance.
                     var modifiedDistance = hitBuffer[i].distance - shellRadius;
