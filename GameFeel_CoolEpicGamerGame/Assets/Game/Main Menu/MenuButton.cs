@@ -12,6 +12,7 @@ public class MenuButton : MonoBehaviour
     public int menuObjectIndex;
     public GameObject menuObject;
     public GameObject menuObject2;
+    public Animator peop;
 
     bool keyDown = true;
 
@@ -35,7 +36,9 @@ public class MenuButton : MonoBehaviour
                     {
                         if (menuObjectIndex == 0)
                         {
-                            Invoke("StartGame", 1);
+                            peop.SetTrigger("FadeOut");
+                            Invoke("StartGame", 2);
+
                             MenuButtonController.enabled = false;
                         } else if (menuObjectIndex == 1)
                         {

@@ -6,7 +6,7 @@
             {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "buildOutputDirList",
-                "value": "{\"m_Value\":\"D:/Unity/Builds/Bloodhunter_2;D:/Unity/Builds/BloodHunter;;;;;;;;\"}"
+                "value": "{\"m_Value\":\"D:/Unity/Builds/Bloodhunter_3;D:/Unity/Builds/Bloodhunter_2;D:/Unity/Builds/BloodHunter;;;;;;;\"}"
             }
         ]
     }
