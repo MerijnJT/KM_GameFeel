@@ -31,6 +31,7 @@ namespace Platformer.Gameplay
                 player.animator.SetTrigger("hurt");
                 player.animator.SetBool("dead", true);
                 Simulation.Schedule<PlayerSpawn>(2);
+                CameraShake.instance.ShakeCamera(5f, .8f);
             }
         }
     }
